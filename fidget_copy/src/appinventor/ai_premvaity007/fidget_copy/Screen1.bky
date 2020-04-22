@@ -1,0 +1,415 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="`YTngwj:2QHp3G756P^p" x="-4609" y="-630">
+    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="+BP@I?vpJsAN{*/C20^2" inline="false">
+        <mutation name="Load_spinner"></mutation>
+        <field name="PROCNAME">Load_spinner</field>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="s)G,]_E$7u0`g;}u=#`+" x="-4402" y="-539">
+    <field name="NAME">Load_spinner</field>
+    <statement name="STACK">
+      <block type="component_set_get" id="x4=gdKo{o9zvJ;gkaH5_">
+        <mutation component_type="ImageSprite" set_or_get="set" property_name="Rotates" is_generic="false" instance_name="fidget_spinner"></mutation>
+        <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+        <field name="PROP">Rotates</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="9+W,8/6ImcyE%Z#=cFj,">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="?OQor`bVw`3KqQM#%(Vx">
+            <mutation component_type="ImageSprite" set_or_get="set" property_name="Width" is_generic="false" instance_name="fidget_spinner"></mutation>
+            <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+            <field name="PROP">Width</field>
+            <value name="VALUE">
+              <block type="math_multiply" id="*D},-@Emnd?3pfEH}mI*">
+                <mutation items="2"></mutation>
+                <value name="NUM0">
+                  <block type="component_set_get" id="1!tRG,[m||v3lP^0vL;8">
+                    <mutation component_type="Canvas" set_or_get="get" property_name="Width" is_generic="false" instance_name="Canvas1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Canvas1</field>
+                    <field name="PROP">Width</field>
+                  </block>
+                </value>
+                <value name="NUM1">
+                  <block type="math_number" id="-:3Kw`k-Wdrq#y;*XD,O">
+                    <field name="NUM">.75</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="*jbE8Z8(^aEa52ZZUl;Q">
+                <mutation component_type="ImageSprite" set_or_get="set" property_name="Height" is_generic="false" instance_name="fidget_spinner"></mutation>
+                <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                <field name="PROP">Height</field>
+                <value name="VALUE">
+                  <block type="component_set_get" id="i8;]jUNjQCS37=s{Ar`V">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="fidget_spinner"></mutation>
+                    <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                    <field name="PROP">Width</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="?g#LtrMQq:mUy(4PFMCO">
+                    <mutation component_type="ImageSprite" method_name="MoveTo" is_generic="false" instance_name="fidget_spinner"></mutation>
+                    <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                    <value name="ARG0">
+                      <block type="math_subtract" id="94Y?F.:@(h%rRSdowFFW">
+                        <value name="A">
+                          <block type="math_multiply" id=")^%[%4[t#FvAPLmV]85Y">
+                            <mutation items="2"></mutation>
+                            <value name="NUM0">
+                              <block type="component_set_get" id="g,Z]l:2EJ`zoSb{%`L52">
+                                <mutation component_type="Canvas" set_or_get="get" property_name="Width" is_generic="false" instance_name="Canvas1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Canvas1</field>
+                                <field name="PROP">Width</field>
+                              </block>
+                            </value>
+                            <value name="NUM1">
+                              <block type="math_number" id="x.6)Yxi8beCSM+Ko2;NF">
+                                <field name="NUM">0.5</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_multiply" id="vPpU|@A8`E.bLDrcP*^X">
+                            <mutation items="2"></mutation>
+                            <value name="NUM0">
+                              <block type="component_set_get" id="l@y*XNG(nH3VsDQ2CEGP">
+                                <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="fidget_spinner"></mutation>
+                                <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                                <field name="PROP">Width</field>
+                              </block>
+                            </value>
+                            <value name="NUM1">
+                              <block type="math_number" id="}P9tC$t@EDY]J(Wh.8/{">
+                                <field name="NUM">0.5</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="math_subtract" id="$|LF7Y^a(a#sN1#ayi,z">
+                        <value name="A">
+                          <block type="math_multiply" id="SgKrZ^U%Yx:HNXj(qKcJ">
+                            <mutation items="2"></mutation>
+                            <value name="NUM0">
+                              <block type="component_set_get" id="-*pS0W(o+I+HvkgeNPt_">
+                                <mutation component_type="Canvas" set_or_get="get" property_name="Width" is_generic="false" instance_name="Canvas1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Canvas1</field>
+                                <field name="PROP">Width</field>
+                              </block>
+                            </value>
+                            <value name="NUM1">
+                              <block type="math_number" id="*)jZ$I}_}/TXg4ux=rgV">
+                                <field name="NUM">0.5</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_multiply" id="H!ywBilc%s^]8BS^sv2*">
+                            <mutation items="2"></mutation>
+                            <value name="NUM0">
+                              <block type="component_set_get" id="UhEFZ.L}#B[W4Rtnq-J?">
+                                <mutation component_type="ImageSprite" set_or_get="get" property_name="Height" is_generic="false" instance_name="fidget_spinner"></mutation>
+                                <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                                <field name="PROP">Height</field>
+                              </block>
+                            </value>
+                            <value name="NUM1">
+                              <block type="math_number" id="h8H!Te~f`R[+u=.ixvNj">
+                                <field name="NUM">0.5</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="#xh})|k6TwaU(pH33|VZ" x="-4038" y="-252">
+    <field name="NAME">rotation</field>
+    <value name="VALUE">
+      <block type="math_number" id="VtAnj:I=fTkO_^iRyJno">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="0tvT%x{K/Q/2/EQ1F_Z," x="-3896" y="-171">
+    <field name="NAME">friction</field>
+    <value name="VALUE">
+      <block type="math_number" id="9X!8|Ooc5k^Yq$Es}e~#">
+        <field name="NUM">0.5</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="XFxZRW^B19+Vsg#}DyYK" x="-3756" y="-112">
+    <field name="NAME">rotation_speed</field>
+    <value name="VALUE">
+      <block type="math_number" id="7TJ!T:r=Z.ANMn;~UnmL">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="vTU7cPPlD?XjI-`gw%86" x="-3566" y="-39">
+    <mutation component_type="ImageSprite" is_generic="false" instance_name="fidget_spinner" event_name="Flung"></mutation>
+    <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="p9pT1f155zQmq`c3UUt$">
+        <field name="VAR">global rotation_speed</field>
+        <value name="VALUE">
+          <block type="math_multiply" id="@_FIc!@m!`O9;7T/26j3">
+            <mutation items="2"></mutation>
+            <value name="NUM0">
+              <block type="lexical_variable_get" id="3D|Q6_(QiT:}qnSB,1o.">
+                <mutation>
+                  <eventparam name="speed"></eventparam>
+                </mutation>
+                <field name="VAR">speed</field>
+              </block>
+            </value>
+            <value name="NUM1">
+              <block type="component_set_get" id="2xxb}`EK?!a:kp7h~BH-">
+                <mutation component_type="Slider" set_or_get="get" property_name="ThumbPosition" is_generic="false" instance_name="Slider1"></mutation>
+                <field name="COMPONENT_SELECTOR">Slider1</field>
+                <field name="PROP">ThumbPosition</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id="F#afJVN3=/f]jZj{BE:+">
+            <field name="VAR">global rotation</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id="vqQ$5R/l@#E{:+Qst;%M">
+                <mutation>
+                  <eventparam name="heading"></eventparam>
+                </mutation>
+                <field name="VAR">heading</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="rbjBb=qHWrW@feqQ8.WP">
+                <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+                <field name="COMPONENT_SELECTOR">Clock1</field>
+                <field name="PROP">TimerEnabled</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="qEGJ9,6Maue62rCeQUh_">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="R=06alxAScXXz}m5cS2C" x="-3457" y="143">
+    <mutation component_type="Slider" is_generic="false" instance_name="Slider2" event_name="PositionChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">Slider2</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="r~XZ8CJtrBqGyG^wLo@i">
+        <field name="VAR">global friction</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="LzK5D%^cVCGz/%3F*N9_">
+            <mutation component_type="Slider" set_or_get="get" property_name="ThumbPosition" is_generic="false" instance_name="Slider2"></mutation>
+            <field name="COMPONENT_SELECTOR">Slider2</field>
+            <field name="PROP">ThumbPosition</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Ci2ps?05b[YY8@_W^[Ce" x="-3281" y="254">
+    <mutation component_type="Clock" is_generic="false" instance_name="Clock1" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+    <statement name="DO">
+      <block type="controls_if" id="zMJVYXw=R;8-=~dB69NH">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="hvlLuP*w=@szh[a*aVHM">
+            <field name="OP">LTE</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="0}+ol4~hpZcjQ2*-p)S7">
+                <field name="VAR">global rotation</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="Lg}ItY+:z#L0lmN#`j^P">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="-U=?}CS}Fv#_~)8nO!4q">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="math_compare" id="EiIA89_V5U0aX(/7nr}O">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="0?tr(2dbTBG.asvutU7Y">
+                    <field name="VAR">global rotation_speed</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="Lh3}Oj6MxOZke5Y??+3|">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="lexical_variable_set" id="adT=rX#.zC+`WO%N.9T=">
+                <field name="VAR">global rotation_speed</field>
+                <value name="VALUE">
+                  <block type="math_subtract" id="+]oGq(gT`49h0muJ5^0`">
+                    <value name="A">
+                      <block type="lexical_variable_get" id="xrNRDvJfdM-0eFr%bYQO">
+                        <field name="VAR">global rotation_speed</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="lexical_variable_get" id="-/i$RJE5L;@H-bj}|]%1">
+                        <field name="VAR">global friction</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="jl!DXp5H}I2GW$2iQiQZ">
+                    <mutation component_type="ImageSprite" set_or_get="set" property_name="Heading" is_generic="false" instance_name="fidget_spinner"></mutation>
+                    <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                    <field name="PROP">Heading</field>
+                    <value name="VALUE">
+                      <block type="math_subtract" id="z$gVo!fY1W`[OJ~9Iy`9">
+                        <value name="A">
+                          <block type="component_set_get" id="e!}qwmh(p,J)i;G1pha9">
+                            <mutation component_type="ImageSprite" set_or_get="get" property_name="Heading" is_generic="false" instance_name="fidget_spinner"></mutation>
+                            <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                            <field name="PROP">Heading</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="lexical_variable_get" id="sl`]$u@yWlPtjrcTDFFO">
+                            <field name="VAR">global rotation_speed</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_set_get" id="m!0PXE/c:DtwuHGYvFB*">
+                <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+                <field name="COMPONENT_SELECTOR">Clock1</field>
+                <field name="PROP">TimerEnabled</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="pnU*uph4Xie]2U!k]JZ5">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="X,!q!A|dw=6nIZ-.p]k4">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="math_compare" id="%5t],f(}[1e/eETK^#nZ">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="J(;|QfR?+)wN_vH]sClE">
+                    <field name="VAR">global rotation_speed</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id=";{DIwdTicpN_-3/,ZM#=">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="lexical_variable_set" id="ldSj`lQt@79u5c?mga{u">
+                <field name="VAR">global rotation_speed</field>
+                <value name="VALUE">
+                  <block type="math_subtract" id="[RncbI9_iuUDH0PxaK5F">
+                    <value name="A">
+                      <block type="lexical_variable_get" id="RtXbJpdPNAd}Mheduxy{">
+                        <field name="VAR">global rotation_speed</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="lexical_variable_get" id="cxfuF^m|IIQo+q63g2Jp">
+                        <field name="VAR">global friction</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id=")rJxp?t;|LgD+bgvuApO">
+                    <mutation component_type="ImageSprite" set_or_get="set" property_name="Heading" is_generic="false" instance_name="fidget_spinner"></mutation>
+                    <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                    <field name="PROP">Heading</field>
+                    <value name="VALUE">
+                      <block type="math_add" id="ELcB2S%gl@c@:I!Y;@r.">
+                        <mutation items="2"></mutation>
+                        <value name="NUM0">
+                          <block type="component_set_get" id="I$)`IrkCK]f$B3Wd+ZU-">
+                            <mutation component_type="ImageSprite" set_or_get="get" property_name="Heading" is_generic="false" instance_name="fidget_spinner"></mutation>
+                            <field name="COMPONENT_SELECTOR">fidget_spinner</field>
+                            <field name="PROP">Heading</field>
+                          </block>
+                        </value>
+                        <value name="NUM1">
+                          <block type="lexical_variable_get" id="Xc,0YS10]Y`WH?=U]1y0">
+                            <field name="VAR">global rotation_speed</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_set_get" id="zeF-l@rl,fyX~c?9{46l">
+                <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+                <field name="COMPONENT_SELECTOR">Clock1</field>
+                <field name="PROP">TimerEnabled</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="p3#~K_vympEe?z6BZ,;M">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="31"></yacodeblocks>
+</xml>
